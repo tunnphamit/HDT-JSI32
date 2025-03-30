@@ -1,0 +1,37 @@
+.sidebar {
+    width: 20%;
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.content {
+    width: 80%;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu .menu-item a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 0px;
+}
+
+.content .task-form {
+    width: 50%;
+    background-color: bisque;
+    padding: 8px;
+}
+
+.task-item {
+    width: 25%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 8px;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: plum;
+}
