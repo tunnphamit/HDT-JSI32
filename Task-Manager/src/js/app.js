@@ -9,6 +9,7 @@ const taskDesc = document.querySelector(".task-desc")
 const taskDeadline = document.querySelector(".task-deadline")
 const taskForm = document.querySelector(".task-form")
 const taskContainer = document.querySelector(".task-container");
+// const USER_ID = localStorage.getItem("user_id_login")
 
 // 2. Viết hàm xử lý thêm task vào Firestore
 function addTask(event) {
@@ -19,7 +20,8 @@ function addTask(event) {
         name: taskName.value,
         desc: taskDesc.value,
         deadline: taskDeadline.value,
-        status: "Chưa hoàn thành"
+        status: "Chưa hoàn thành",
+        // userId: USER_ID
     }
 
     // Dùng hàm của Firebase để thêm task mới
@@ -47,6 +49,7 @@ function renderTaskList() {
     // Lấy dữ liệu trong Firestore cho vào chuỗi htmls
     db.collection("tasks")
     .get()
+    // .where("user_id", "==", USER_ID)
     .then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
             // console.log(doc.id, " => ", doc.data());
