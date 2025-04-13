@@ -1,0 +1,19 @@
+body {
+    background-color: #d3d3d3;
+}
+
+.form-container {
+    width: 500px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.form-group input,
+.form-group button {
+    width: 100%;
+}

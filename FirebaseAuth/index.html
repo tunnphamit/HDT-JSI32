@@ -10,10 +10,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-     <!-- Link thư viện Owl carousel để tạo Slide trên trang Web -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
- 
     <link rel="stylesheet" href="./src/css/home.css">
 </head>
 
@@ -41,22 +37,14 @@
             </ul>
 
             <!-- Account -->
-            <div class="account"></div>
+            <div class="account">
+                <a href="./login.html" class="btn btn-primary">Đăng nhập</a>
+                <a href="./register.html" class="btn btn-primary">Đăng ký</a>
+            </div>
         </header>
 
         <!-- Banner -->
-        <div class="banner">
-
-            <!-- Slide -->
-            <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <img src="https://static.kfcvietnam.com.vn/images/category/lg/COMBO%201%20NGUOI.jpg?v=3wb65g" alt="">
-                </div>
-                <div class="item">
-                    <img src="https://static.kfcvietnam.com.vn/images/items/lg/D-CBO-CHICKEN-1.jpg?v=P38mNL" alt="">
-                </div>
-            </div>
-        </div>
+        <div class="banner"></div>
 
         <!-- Các món ăn tiêu biểu -->
         <div class="signature-foods"></div>
@@ -88,21 +76,6 @@
     <!-- Cấu hình firebase -->
     <script src="./src/js/firebase-config.js"></script>
 
-     <!-- Link JS thư viện Owl carousel -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-     <script>
-         $('.owl-carousel').owlCarousel({
-             loop:true,
-             margin:10,
-             // nav:true,    
-             responsive:{
-                 0:{
-                     items:1
-                 },
-             }
-         })
-     </script>
     <!-- My JS -->
 </body>
 
